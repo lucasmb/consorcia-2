@@ -1,0 +1,159 @@
+.middle_col{
+    width: 50%;
+    float: left;
+    margin-bottom: 1%;
+}
+
+.middle_col_building{
+    width: 50%;
+    float: left;
+}
+
+.middle_col label{
+    width: 100px;        
+    float: left;
+}
+
+.field{
+    width: 100%;        
+}
+
+.field label{
+    font: 10pt 'trebuchet ms',arial,sans-serif;
+    float: left;
+    width: 30%;
+}
+
+.field select{
+    font: 10pt 'trebuchet ms',arial,sans-serif;
+    width: 68%;
+}
+
+.field input{
+    font: 10pt 'trebuchet ms',arial,sans-serif;
+    width: 65%;
+}
+
+.div_border {
+    border: 1px solid #EDDEC1;
+    clear: both;
+    margin: 10px 10px 5px 0;
+    overflow: hidden;
+    padding: 10px 5px;
+    width: 97%;
+}
+
+.table_properties{
+    font: 10pt 'trebuchet ms',arial,sans-serif;
+    margin: 2.5% 0 2.5% 0;
+    width: 100%;
+}
+
+img{
+    cursor:pointer;
+}
+
+#add_special_expense, #add_estimative_expense, #add_extraordinary_expense, #add_expense{
+    width: 99%;
+}
+
+.ui-autocomplete li{
+    font: 10pt 'century gothic',arial,sans-serif;
+    list-style: none;
+}
+
+.submit{
+    background: yellowgreen;
+    font: 1.2em 'trebuchet ms',arial,sans-serif;
+    border-radius: 10px 3px 10px 3px;
+    padding: 5px;
+    color: #FFFFFF;
+    float: right;
+    width: 175px;
+}
+
+
+.cancel{
+    background: brown;
+    font: 1.2em 'trebuchet ms',arial,sans-serif;
+    color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 10px 3px 10px;
+    padding: 5px;
+    width: 175px;
+    float: left;
+}
+
+.expense_older_tags{
+    width: 400px;
+ }
+
+.value_older{
+    width: 60px;
+}
+
+.type_older_expense{
+    width: 170px;
+    
+}
+
+.date_older{
+    width: 80px;
+    
+}
+
+.div_expense_older_tags{
+    width: 417px;
+    float: left;
+ }
+
+.div_value_older{
+    width: 77px;
+    float: left;
+}
+
+.div_type_older_expense{
+    width: 177px;
+    float: left;
+}
+
+.div_date_older{
+    width: 50px;
+    float: left;
+}
+
+#div_expense_editor{
+    width: 80px;
+}
+
+.estimative_expense_older_tags{
+    width: 500px;
+ }
+
+.estimative_value_older{
+    width: 60px;
+}
+
+.estimative_date_older{
+    width: 80px;
+    
+}
+
+.div_estimative_expense_older_tags{
+    width: 517px;
+    float: left;
+ }
+
+.div_estimative_value_older{
+    width: 77px;
+    float: left;
+}
+
+.div_estimative_date_older{
+    width: 50px;
+    float: left;
+}
+
+.th_edition{
+    width: 100px;
+}

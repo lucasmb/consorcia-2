@@ -1,0 +1,120 @@
+#building_estimate {
+    width: 30%;
+    height: 29px;
+}
+
+#input_new_base_estimate {
+    width: 10%;
+}
+
+#btn_modify_base {
+    width: 25%;
+    height: 29px;
+}
+
+#btn_calculate_base {
+    margin-top: 5px;
+    width: 98%;
+    height: 29px;
+}
+
+.btn_full_width {
+    margin-top: 5px;
+    width: 98%;
+    height: 29px;   
+}
+
+.table_properties {
+    width: 98% !important;
+    font: 9pt 'trebuchet ms',arial,sans-serif !important;
+    margin: 1% 0 0 0;
+    border:  1px solid #CCC;
+    border-radius: 2px;
+}
+
+table tr td {
+    background: #FFF;
+}
+
+.table_properties tr td input {
+    width: 90%;
+    height: 20px;
+}
+
+.table_properties tr td select {
+    max-width: 260px;
+    height: 34px;
+}
+
+.table_properties tr td .date {
+    max-width: 60px;
+}
+
+.table_properties tr td button {
+    min-height: 50px;
+    width: 40px;
+    height: 30px
+}
+
+.duplicated {
+    background: #B60000 !important;   
+    color: #FFF; 
+}
+
+.table_row_duplicated td {
+    background: #FFF !important;   
+    border-top: 1px solid #CCC;
+    color: #B60000; 
+}
+
+.div_border {
+    border: 1px solid #EDDEC1;
+    clear: both;
+    margin: 10px 10px 5px 0;
+    overflow: hidden;
+    padding: 10px 5px;
+    width: 97%;
+}
+
+#btn_generate_bank_complete_file {
+    width: 100%;
+    height: 40px;   
+}
+
+#btn_generate_bank_file_for_building { 
+    width: 100%;
+    height: 40px;   
+}
+
+#btn_load_bank_complete_file {
+    width: 100%;
+    height: 40px;      
+}
+
+#btn_generate_bank_validation_file {
+    width: 100%;
+    height: 40px;      
+}
+
+#btn_load_bank_expenses_file {
+    width: 100%;
+    height: 40px;      
+}
+
+#file_to_upload {
+    width: 99%;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+#file_to_upload_expenses {
+    width: 99%;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+#building {
+    width: 70%;
+    margin-bottom: 18px;
+    float: right;
+}

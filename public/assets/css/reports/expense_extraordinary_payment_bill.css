@@ -1,0 +1,39 @@
+.table_properties{
+    cellpadding: 0;
+    cellspacing: 0;
+    border: 1px #000000;
+    font: 10pt 'trebuchet ms',arial,sans-serif;
+    margin: 2.5% 2.5% 2.5% 2.5% ;
+    width: 100%;
+    text-align: center;
+}
+
+.table_properties {border: 1px solid #CCCCCC;}
+
+.table_properties th{    
+    color: #FFF;    
+    background: #eddec1 url(../../img/home/header_table.jpg);
+    
+}
+
+.table_properties tr td{
+    border: 1px solid #F4F4EE;
+}
+
+
+tr:nth-of-type(odd) td{
+    background-color:#F4F4EE
+} 
+
+tr:nth-of-type(even) td{
+    background-color:#FFFFFF
+ 
+}
+
+table input{
+    width:auto;
+}
+
+.type_pay{
+    text-align: left;
+}

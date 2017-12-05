@@ -1,0 +1,117 @@
+.page{
+    height: 670px;
+}
+
+.left_column{
+    font: 9pt 'trebuchet ms',arial,sans-serif;
+    float: left;
+    width: 48%;
+}
+
+.right_column{
+    font: 9pt 'trebuchet ms',arial,sans-serif;
+    width:48%;
+    padding-left: 5px;
+    margin-left: 1%;
+    float: left;
+}
+
+.original_left{
+    height: 335px;
+}
+
+.original_right{
+    height: 335px;
+}
+
+.duplicate_left{
+    height: 335px;
+}
+
+.duplicate_right{
+    height: 338px;
+}
+
+.title{
+    font: 9pt 'trebuchet ms',arial,sans-serif;
+    text-align: center;
+    width: 100%;
+    border: solid 1px #000;
+}
+
+.title div{
+    display: inline-block;
+}
+
+.title_bill_type{
+    margin-bottom: 5px; 
+}
+
+.title_bill_id{
+    margin-right: 12px; 
+    margin-bottom: 2px; 
+    margin-top: 4px; 
+}
+
+.title_center{
+    margin-top: 4px;
+    margin-left: 5%;
+    width: 50%;
+}
+
+.title_right{
+    width: 44%;
+    margin-right: 0;
+}
+
+.content{
+    margin: 5px 0 0 25px;
+}
+
+.table_properties{
+    
+    border-spacing:0px;
+    font: 8pt 'trebuchet ms',arial,sans-serif;
+    margin: 0 0% 0% 0% ;
+    width: 95%;
+}
+
+.import{
+    text-align: right;
+}
+
+.table_owner{
+    font: 8pt 'trebuchet ms',arial,sans-serif;
+    margin: 0 1px 0 1px;
+    width: 100%;
+}
+
+.table_properties th{    
+    color: #FFF;
+    background: #322A27 url(../../img/home/header_table.jpg);
+}
+
+hr { display: block; height: 1px;
+    border: 0; border-top: 1px solid #322A27;
+    margin: 0.5em 0; padding: 0; }
+
+
+.sign{
+    width: 30%;
+    text-align: center;
+    margin: 0.5% 0 0 50%;
+    margin-top: 20px;
+    border-top: 1px solid #322A27;
+    font: 9pt 'trebuchet ms',arial,sans-serif;
+}
+
+.footer{
+    text-align: left;
+    margin: 0% 0 0 0;
+    font: 8pt 'trebuchet ms',arial,sans-serif;
+    float: bottom;
+}
+
+#owner{
+    width: 285px;
+}

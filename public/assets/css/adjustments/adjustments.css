@@ -1,0 +1,28 @@
+#building_estimate {
+    width: 30%;
+}
+
+#input_new_base_estimate {
+    width: 10%;
+}
+
+#btn_modify_base {
+    width: 44%;
+}
+
+#btn_calculate_base {
+    margin-top: 5px;
+    width: 98%;
+    height: 29px;
+}
+
+.table_properties {
+    width: 98% !important;
+    font: 9pt 'trebuchet ms',arial,sans-serif !important;
+    margin: 1% 0 0 0;
+    border-left:  1px solid #CCC;
+}
+
+table tr td {
+    background: #FFF;
+}

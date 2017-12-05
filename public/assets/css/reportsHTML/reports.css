@@ -1,0 +1,93 @@
+.contenedor_reports{
+    border-radius: 10px 10px 10px 10px;
+}
+
+.sidebar {
+    float: left;
+    padding: 0;
+    width: 250px;
+    border-radius: 10px 0 0 10px;
+    
+background: #dcdcdc;
+}
+
+.sidebar_item{
+    font: 2em 'century gothic', arial, sans-serif;
+    margin: 10px 0px 10px 5px;
+    padding: 5px 20px 5px 20px;
+    text-align: right;
+    border-radius: 10px 0 0 10px;
+    color: #fcfcfc;
+    background: #727272; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #727272 0%, #776d5f 13%, #635b53 19%, #776d5f 22%, #7f7f7f 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#727272), color-stop(13%,#776d5f), color-stop(19%,#635b53), color-stop(22%,#776d5f), color-stop(100%,#7f7f7f)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(45deg,  #727272 0%,#776d5f 13%,#635b53 19%,#776d5f 22%,#7f7f7f 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg,  #727272 0%,#776d5f 13%,#635b53 19%,#776d5f 22%,#7f7f7f 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg,  #727272 0%,#776d5f 13%,#635b53 19%,#776d5f 22%,#7f7f7f 100%); /* IE10+ */
+    background: linear-gradient(45deg,  #727272 0%,#776d5f 13%,#635b53 19%,#776d5f 22%,#7f7f7f 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#727272', endColorstr='#7f7f7f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    border-right: none;
+}
+.sidebar_item:hover{
+    color: #322a27;
+    background: #feccb1; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #feccb1 0%, #6b1901 9%, #ad2901 10%, #eda789 13%, #eadfda 55%, #f4e7e1 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#feccb1), color-stop(9%,#6b1901), color-stop(10%,#ad2901), color-stop(13%,#eda789), color-stop(55%,#eadfda), color-stop(100%,#f4e7e1)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(45deg,  #feccb1 0%,#6b1901 9%,#ad2901 10%,#eda789 13%,#eadfda 55%,#f4e7e1 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg,  #feccb1 0%,#6b1901 9%,#ad2901 10%,#eda789 13%,#eadfda 55%,#f4e7e1 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg,  #feccb1 0%,#6b1901 9%,#ad2901 10%,#eda789 13%,#eadfda 55%,#f4e7e1 100%); /* IE10+ */
+    background: linear-gradient(45deg,  #feccb1 0%,#6b1901 9%,#ad2901 10%,#eda789 13%,#eadfda 55%,#f4e7e1 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#f4e7e1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    border-left: 1px solid #ad2901;
+    border-top: 1px solid #ad2901;
+    border-bottom: 1px solid #ad2901;
+
+
+}
+
+.option_description{
+    background:#f4e7e1;
+    border: 1px solid #ad2901;
+}
+
+/* Vertical Tabs
+----------------------------------*/
+
+.ui-tabs-vertical { }
+.ui-tabs-vertical .ui-tabs-nav { padding: .2em 0em .2em .2em; float: left; width: 30%; }
+.ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-right-width: 0 !important; padding-top:1em; padding-bottom:1em;}
+.ui-tabs-vertical .ui-tabs-nav li a { display:block; }
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-selected {  }
+.ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; width: 40em;}
+.ui-tabs-vertical .ui-tabs-nav li a {float:right; margin: 4px 4px 4px 4px; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected {margin-bottom:1px; padding-bottom:1px; color: #B60000; padding-top:1em; padding-bottom:1em;}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a {color: #B60000;}
+.ui-widget-header {background: url(assets/img/home/ui-bg_gloss-wave_50_635b53_500x400.jpg)}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{ background:none;}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+    background: url("images/ui-bg_highlight-hard_100_f4f0ec_1x100.png") repeat-x scroll 50% 50% #F4F0EC;}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+    background: url("images/ui-bg_glass_100_f5f0e5_1x400.png") repeat-x scroll 50% 50% #F5F0E5;}
+
+.div_border {
+    border: 1px solid #EDDEC1;
+    clear: both;
+    margin: 10px 10px 20px 0;
+    overflow: hidden;
+    padding: 10px 5px;
+    width: 97%;    
+}
+
+button{
+    margin-top: 5px;
+    margin-left: 5px;
+    padding: 5px;
+    width: 45%;    
+    text-align: center;
+}
+
+.adv_col{
+    text-align: center;
+}

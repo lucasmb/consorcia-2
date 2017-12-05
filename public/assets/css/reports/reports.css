@@ -1,0 +1,91 @@
+.contenedor_reports{
+    border-radius: 10px 10px 10px 10px;
+}
+
+.option_description{
+    background:#f4e7e1;
+    border: 1px solid #ad2901;
+}
+
+.div_border {
+    border: 1px solid #EDDEC1;
+    clear: both;
+    margin: 10px 10px 20px 0;
+    overflow: hidden;
+    padding: 10px 5px;
+    width: 97%;    
+}
+
+.adv_col{
+    text-align: center;
+    width: 100%;
+}
+
+input {
+    height: 20px;
+}
+
+button { 
+    width: 100%;
+    margin-top: 2px;
+}
+
+.adv_row {
+    width: 100%;
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+
+.adv_row_div_label {
+    display: inline-block;
+    width: 28%;
+}
+
+.adv_row select {
+    width: 71%;
+}
+
+.adv_row input {
+    display: inline-block;
+    height: 20px;
+    width: 68.8%;
+}
+
+.label_width {
+    width: 20%;
+    margin-top: 5px; 
+}
+
+.ui-tabs-vertical .ui-tabs-nav { 
+    padding: 0;
+    float: left;
+    width: 31%;
+}
+
+.ui-tabs-vertical .ui-tabs-nav li { 
+    clear: left;
+    width: 95%; 
+}
+
+.ui-tabs-vertical .ui-tabs-nav li a { 
+    display:block; 
+    width: 100%;
+}
+
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-selected { 
+    padding-bottom: 0; 
+}
+
+.ui-tabs-vertical .ui-tabs-panel { 
+    float: right; 
+    width: 67%;
+}
+
+.ui-tabs .ui-tabs-nav li a {
+    padding: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 5%;
+    margin-top: 2px;
+    margin-left: 1%;
+}

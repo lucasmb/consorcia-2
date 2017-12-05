@@ -58,8 +58,7 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array('database', 'session', 'render');
-
+$autoload['libraries'] = array('database', 'session', 'render', 'activerecord', 'form_validation');
 /*
 | -------------------------------------------------------------------
 |  Auto-load Drivers
@@ -89,7 +88,7 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
-$autoload['helper'] = array('url', 'main');
+$autoload['helper'] = array('url', 'main','language','form','text');
 
 /*
 | -------------------------------------------------------------------

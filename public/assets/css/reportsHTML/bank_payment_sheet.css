@@ -1,0 +1,20 @@
+.highlight {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+body {
+	font-size: 13px;
+	white-space: nowrap;
+}
+
+.identifier_col {
+	min-width: 430px;
+	width: 430px;
+}
+
+@media print {
+    .line_break {
+    	 page-break-after: always;
+    }
+}

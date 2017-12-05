@@ -1,0 +1,87 @@
+.title{
+    border: 1px solid #CCC;
+    height: 87px;
+    margin-top: 10px;
+}
+
+.title_center{
+    font: 11pt 'trebuchet ms',arial,sans-serif;
+    text-align: center;
+    margin-top: 25px;
+    
+}
+
+.table_properties{
+    width: 100%;
+    font: 6pt 'trebuchet ms',arial,sans-serif;
+    margin: 1.5% 1.5% 1.5% 1.5% ;
+    padding: 0% 3% 0% 0% ;
+    border-left:  1px solid #CCC;
+}
+
+.table_properties th{
+    border-top:  1px solid #CCC;
+    border-bottom:  1px solid #CCC;
+    border-right:  1px solid #CCC;
+    padding: 2px;
+    text-align: center;
+}
+ 
+.table_properties td{
+    border-bottom:  1px solid #CCC;
+    border-right:  1px solid #CCC;
+    padding: 1px;
+    text-align: right;
+}
+
+#owner{
+    text-align: left;
+    width: 150px;
+}
+
+.footer_due_days{
+    font-size: 9pt;
+    margin-top: 10px;
+}
+
+.center_text{
+    text-align: center;
+}    
+
+.table_row td{
+    background-color:#FFFFFF;
+}
+
+.table_due td{
+    background-color:#333333;
+    color:#FFFFFF;
+}
+
+.special_pays{
+    font: 9pt 'trebuchet ms',arial,sans-serif;
+    padding: 0% 1.5% 0% 1.5% ;
+}
+
+.footer_days{
+    border: 1px solid #DDD;
+    font: 9pt 'trebuchet ms',arial,sans-serif;
+}
+
+.pay_day_title{
+    text-align: center;
+    padding: 2px;
+    background-color: #EEE;
+}
+
+.pay_day{
+    padding-left: 5px;
+    font-size: 9pt;
+}
+
+.pay_day_day{
+    width: 33%;
+}
+
+.pay_day_hour{
+    
+}

@@ -1,0 +1,209 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font: 14pt arial, sans-serif;
+}
+
+.book {
+    position: relative;
+}
+
+.page {
+    width: 210mm;
+    height: 286mm;
+    padding: 0mm;
+    margin: 0mm auto;
+    background: white;
+}
+
+.subpage {
+    height: 100%;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+
+    .page {
+        margin: 5mm;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
+
+    .subpage {
+        position: relative;
+    }
+
+    .payment_section { 
+        position: absolute;
+        bottom: 5mm;
+        width: 200mm;
+    }
+
+}
+
+.subpage::after {
+    content: url(../../img/report/JHConsorcios.png);
+    margin-left: 13%;
+    padding-top: 35%;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.expense_page {
+    page-break-after: always;
+}
+
+.header{
+    font-size: 15pt;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    width: 100%;
+    border: solid 1px #333;
+    border-radius: 2px;
+}
+
+.header div{
+    display: inline-block;
+}
+
+.uf_data{
+    font: 14pt arial, sans-serif;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    padding: 5px 0 5px 0;
+    border: solid 1px #333;
+    border-radius: 2px;
+}
+
+.uf_data .mid_field {
+    display: inline-block;
+    width: 48%;
+    margin-left: 10px;
+}
+
+.uf_data .mid_field span {
+    font-weight: bold;
+}
+
+.detail{
+    width: 98%;
+    border: solid 1px #333;   
+    margin: 10px 0 10px 0;
+    padding: 5px 1% 5px 1%;
+    border-radius: 2px;
+}
+
+.detail_title {
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 6px;
+    padding-bottom: 10px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.detail_table {
+    width: 100%;
+    margin: 10px 0 5px 0;
+}
+
+.detail_table_row div {
+    display: inline-block;
+    margin: 4px 0 0 0;
+}
+
+.row_description {
+    width: 78%;
+}
+
+.row_price {
+    width: 19%;   
+    text-align: right;
+}
+
+.row_description span {
+    font-weight: bold;
+}
+
+.row_price span {
+    font-weight: bold; 
+}
+
+.detail_expiration_date {
+    margin-top: 15px;
+    font-size: 15pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+.summary_section {
+    width: 100%;
+    border: solid 1px #333;   
+    margin: 10px 0 10px 0;
+    padding: 5px 1% 5px 1%;
+    border-radius: 2px;
+}
+
+.payment_section {
+    width: 200mm;
+    position: absolute; 
+    bottom: 5mm;
+}
+
+.bank_section {
+    border: solid 1px #333;
+    padding: 10px;
+    border-radius: 2px;
+    text-align: center; 
+}
+
+.codebar_section {
+    width: 100%;
+    border: solid 1px #333;   
+    border-radius: 2px;
+    margin-top: 10px;
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+
+@font-face {
+  font-family: 'CodebarFont';
+  src: url('../../fonts/IDAutomationHI25M.ttf') format('truetype');
+}
+
+.codebar_section span {
+    font-family: 'CodebarFont';
+    font-size: 12pt;
+}
+
+.codebar_section p:first-of-type {
+    margin-top: 4px; 
+}
+
+p {
+    margin-top: 2px;
+    margin-bottom: 0px;
+}
+
+p img {
+    display: inline;
+    vertical-align: middle;
+    margin-bottom: 2px;
+}

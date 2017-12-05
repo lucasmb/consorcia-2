@@ -1,0 +1,112 @@
+.page{
+    height: 680px;
+}
+
+.left_column{
+    font: 11pt 'trebuchet ms',arial,sans-serif;
+    float: left;
+    width: 48%;
+}
+
+.right_column{
+    font: 11pt 'trebuchet ms',arial,sans-serif;
+    width:48%;
+    padding-left: 5px;
+    margin-left: 1%;
+    float: left;
+}
+
+.original_left{
+    height: 340px;
+}
+
+.original_right{
+    height: 340px;
+}
+
+.duplicate_left{
+    height: 340px;
+}
+
+.duplicate_right{
+    height: 340px;
+}
+
+.title{
+    font: 10pt 'trebuchet ms',arial,sans-serif;
+    width: 100%;
+    border: solid 1px #000;
+}
+
+.title div{
+    display: inline-block;
+}
+
+.title_center{
+    margin-top: 10px;
+    margin-left: 5%;
+    width: 64%;
+}
+
+.title_right{
+    width: 28%;
+    margin-right: 0;
+}
+
+.content{
+    margin: 5px 0 0 25px;
+}
+
+.table_properties{
+    cellpadding: 0;
+    cellspacing: 0;
+    
+    font: 11pt 'trebuchet ms',arial,sans-serif;
+    margin: 0 2.5% 2.5% 2.5% ;
+    width: 95%;
+}
+.table_properties{
+    cellpadding: 0;
+    cellspacing: 0;
+    
+    font: 9pt 'trebuchet ms',arial,sans-serif;
+    margin: 0 2.5% 0% 2.5% ;
+    width: 95%;
+}
+
+.import{
+    text-align: right;
+}
+
+.table_owner{
+    cellpadding: 0;
+    cellspacing: 0;
+    
+    font: 9pt 'trebuchet ms',arial,sans-serif;
+    margin: 0 1px 0 1px;
+    width: 100%;
+}
+
+.table_properties th{    
+    color: #FFF;    
+    background: #322A27 url(../../img/home/header_table.jpg);
+}
+
+.sign{
+    width: 30%;
+    text-align: center;
+    margin: 1.5% 0 0 50%;
+    font: 10pt 'trebuchet ms',arial,sans-serif;
+}
+
+.footer{
+    text-align: left;
+    margin: 1% 0 0 0;
+    font: 8pt 'trebuchet ms',arial,sans-serif;
+    float: bottom;
+}
+
+#owner{
+    width: 285px;
+}
+
