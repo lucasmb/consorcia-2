@@ -53,8 +53,10 @@
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
-	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
+	define('ENVIRONMENT', isset($_ENV["CLEARDB_DATABASE_URL"]) ? 'production' : 'development');
 
+var_dump($_ENV);
+var_dump($_SERVER);
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
