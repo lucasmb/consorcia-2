@@ -55,8 +55,9 @@
  */
 	define('ENVIRONMENT', isset($_ENV["CLEARDB_DATABASE_URL"]) ? 'production' : 'development');
 
-var_dump($_ENV);
-var_dump($_SERVER);
+echo 'vars:';
+print_r($_ENV);
+print_r($_SERVER);
 
 /*
  *---------------------------------------------------------------
