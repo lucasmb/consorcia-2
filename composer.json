@@ -4,6 +4,9 @@
 	"type": "project",
 	"homepage": "https://codeigniter.com",
 	"license": "MIT",
+	"config": {
+        "vendor-dir": "vendor"
+    },
 	"support": {
 		"forum": "http://forum.codeigniter.com/",
 		"wiki": "https://github.com/bcit-ci/CodeIgniter/wiki",
