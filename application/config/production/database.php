@@ -77,8 +77,8 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	
-	'dsn'	=> 'mysql:host=27a0030a@us-cdbr-iron-east-05.cleardb.net; dbname=heroku_9a78821e28669e0; charset=utf8;',
-	'hostname' => '27a0030a@us-cdbr-iron-east-05.cleardb.net',
+	'dsn'	=> 'mysql:host=27a0030a@us-cdbr-iron-east-05.cleardb.net;dbname=heroku_9a78821e28669e0; charset=utf8;',
+	'hostname' => 'us-cdbr-iron-east-05.cleardb.net',
 	'username' => 'b0a604949482fb',
 	'password' => '27a0030a',
 	'database' => 'heroku_9a78821e28669e0',
