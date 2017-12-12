@@ -55,10 +55,6 @@
  */
 	define('ENVIRONMENT', isset($_ENV["CLEARDB_DATABASE_URL"]) ? 'production' : 'development');
 
-echo 'vars:';
-print_r($_ENV);
-print_r($_SERVER);
-
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
@@ -76,7 +72,7 @@ switch (ENVIRONMENT)
 
 	case 'testing':
 	case 'production':
-		ini_set('display_errors', 0);
+		ini_set('display_errors', 1);
 		if (version_compare(PHP_VERSION, '5.3', '>='))
 		{
 			error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT & ~E_USER_NOTICE & ~E_USER_DEPRECATED);
