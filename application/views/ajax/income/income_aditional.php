@@ -3,7 +3,7 @@
     
     function edit_income_aditional(income_id){
         if (income_id != ""){
-            $.post('index.php/ajax/incomes/edit_aditional_income', {id : income_id}, function(rta){
+            $.post('/ajax/incomes/edit_aditional_income', {id : income_id}, function(rta){
                 $.fancybox({
                     'content' : rta
                 });
@@ -13,7 +13,7 @@
     
     function delete_income_aditional(id){        
         if (id != ""){
-            $.post('index.php/ajax/incomes/delete_aditional_income', { id : id } , function(rta){
+            $.post('/ajax/incomes/delete_aditional_income', { id : id } , function(rta){
                 
                 $('#building').trigger('change');
             });    
@@ -22,7 +22,7 @@
     
     function increment_priority(income_id){
         if (income_id != ""){
-            $.post('index.php/ajax/incomes/increment_priority', {id : income_id},function(){
+            $.post('/ajax/incomes/increment_priority', {id : income_id},function(){
                 $('#building').trigger('change');
             });
 
@@ -31,7 +31,7 @@
 
     function decrement_priority(income_id){
         if (income_id != ""){
-            $.post('index.php/ajax/incomes/decrement_priority', {id : income_id},function(){
+            $.post('/ajax/incomes/decrement_priority', {id : income_id},function(){
                 $('#building').trigger('change');
             });
         }
@@ -44,7 +44,7 @@
      source: function(request, response) {
             $.ajaxSetup({async:true});    
             $.ajax({
-                url: "index.php/ajax/incomes/get_income_tags",
+                url: "/ajax/incomes/get_income_tags",
                 dataType: "json",
                 delay: 100,
                 data: {
@@ -58,7 +58,7 @@
         min_length: 3,
         delay: 300
     });
-        /*source: "index.php/ajax/incomes/get_income_tags",
+        /*source: "/ajax/incomes/get_income_tags",
         minLength: 3,
         delay: 100,
         select: function(event,ui){
@@ -66,7 +66,7 @@
     });*/
     
     $( "#add_aditional_button" ).click(function(){
-        $.post('index.php/ajax/incomes/add_aditional_income', $("#frm_aditional_income").serialize(), function(rta){
+        $.post('/ajax/incomes/add_aditional_income', $("#frm_aditional_income").serialize(), function(rta){
             if (rta.indexOf("success") == -1){
                 $("#div_errors").html("").append(rta);
             }
@@ -79,7 +79,7 @@
     $( ".button_add_aditional_older_income" ).click(function(){
         
         var form = "#frm_add_older_aditional_income" + $(this).val();
-        $.post('index.php/ajax/incomes/add_older_expense', $(form).serialize(), function(rta){
+        $.post('/ajax/incomes/add_older_expense', $(form).serialize(), function(rta){
             if (rta.indexOf("success") == -1){
                 $("#div_errors_older_add").html("").append(rta);
             }
@@ -183,10 +183,10 @@
             <td><?= $income->priority ?></td>
             <td>
                 <div id="div_income_editor">
-                    <img src="<?= url_img('/home/delete.png') ?>" onclick="delete_income_aditional(<?= $income->id ?>)">
-                    <img src="<?= url_img('/home/edit.gif') ?>" onclick="edit_income_aditional(<?= $income->id ?>)">
-                    <img src="<?= url_img('/home/plus.png') ?>" onclick="increment_priority(<?= $income->id ?>)">
-                    <img src="<?= url_img('/home/minus.png') ?>" onclick="decrement_priority(<?= $income->id ?>)">
+                    <img src="<?= 'assets/img/home/delete.png' ?>" onclick="delete_income_aditional(<?= $income->id ?>)">
+                    <img src="<?= 'assets/img/home/edit.gif' ?>" onclick="edit_income_aditional(<?= $income->id ?>)">
+                    <img src="<?= 'assets/img/home/plus.png'?>" onclick="increment_priority(<?= $income->id ?>)">
+                    <img src="<?= 'assets/img/home/minus.png' ?>" onclick="decrement_priority(<?= $income->id ?>)">
                 </div>
             </td>
         </tr>

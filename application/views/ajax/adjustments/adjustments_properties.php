@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="<?= url_css('/reportsHTML/monthly_capitulation_building.css') ?>" />
+<link rel="stylesheet" type="text/css" href="<?= '/assets/css/reportsHTML/monthly_capitulation_building.css' ?>" />
 <div class="content">
 <? $colspan = 8; ?>
     <table cellpadding="0" cellspacing="0" class="table_properties">

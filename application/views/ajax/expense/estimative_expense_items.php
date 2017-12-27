@@ -5,7 +5,7 @@ $(document).ready(function() {
     $( ".buttonSubmitOlderEstimativeExpense" ).click(function(){
         
         var form = "#frm_add_older_estimative_expense" + $(this).val();
-        $.post('index.php/ajax/expenses/add_older_estimative_expense', $(form).serialize(), function(rta){
+        $.post('/ajax/expenses/add_older_estimative_expense', $(form).serialize(), function(rta){
             if (rta.indexOf("success") == -1){
                 $("#div_errors_older_add").html("").append(rta);
             }
@@ -50,6 +50,8 @@ $(document).ready(function() {
         </tbody>
     </table>    
 <? endif; ?>
+
+
 <? if($current_expenses != null): ?>
 
     <h3>Expensas del mes anterior</h3>

@@ -1,7 +1,7 @@
 <script type="text/javascript">
 </script>
-<script type="text/javascript" src="<?= url_js('/editTags/jquery.multi-select.js')?>"></script>
-<link rel="stylesheet" type="text/css" href="<?= url_css("/editTags/multi-select.css") ?>" />
+<script type="text/javascript" src="<?= '/assets/js/editTags/jquery.multi-select.js'?>"></script>
+<link rel="stylesheet" type="text/css" href="/assets/css/editTags/multi-select.css"/>
 
 <style type="text/css">
     #building_tags{
