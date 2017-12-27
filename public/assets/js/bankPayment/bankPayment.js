@@ -4,14 +4,14 @@ $(document).ready(function(){
     //     id_building = $("#building_estimate").val();
     //     if (id_building != ""){
             
-    //         $.get('index.php/ajax/adjustments/get_building_base', { id: id_building }, function(rta){
+    //         $.get('/ajax/adjustments/get_building_base', { id: id_building }, function(rta){
                 
     //             $("#new_base_estimate").val(rta);
     //             $("#adjustment_estimate").html("")
                  
     //         });
 
-    //         $.get('index.php/ajax/adjustments/get_building_estimate', { id: id_building } , function(rta){
+    //         $.get('/ajax/adjustments/get_building_estimate', { id: id_building } , function(rta){
                 
     //             $("#adjustment_estimate").html("").append(rta);
     //             $("#adjustment_estimate").show("300");
@@ -31,7 +31,7 @@ $(document).ready(function(){
         id_building = $("#building_estimate").val();
         new_base_building = $("#new_base_estimate").val();
         if (id_building != "" || !isNaN(new_base_building)) {
-            $.get('index.php/ajax/adjustments/get_building_estimate', { id: id_building, base: new_base_building } , function(rta){
+            $.get('/ajax/adjustments/get_building_estimate', { id: id_building, base: new_base_building } , function(rta){
                 
                 $("#adjustment_estimate").html("").append(rta);
                 $("#adjustment_estimate").show("300");
@@ -46,7 +46,7 @@ $(document).ready(function(){
         id_building = $("#building_estimate").val();
         new_base_building = $("#new_base_estimate").val();
         if (id_building != "" || !isNaN(new_base_building)) {
-            $.post('index.php/ajax/adjustments/set_building_base', { id: id_building, base: new_base_building }, function(rta){
+            $.post('/ajax/adjustments/set_building_base', { id: id_building, base: new_base_building }, function(rta){
                 
                 if (rta == 'ok') {
                     alert("Modificaciones correctas");
@@ -63,7 +63,7 @@ $(document).ready(function(){
         evt.preventDefault();
         var formData = new FormData($(this)[0]);
         $.ajax({
-            url: 'index.php/ajax/bankPayment/upload_roela_file_bank_payments',
+            url: '/ajax/bankPayment/upload_roela_file_bank_payments',
             type: 'POST',
             data: formData,
             async: false,
@@ -87,7 +87,7 @@ $(document).ready(function(){
         evt.preventDefault();
         var formData = new FormData($(this)[0]);
         $.ajax({
-            url: 'index.php/ajax/bankPayment/upload_roela_file_bank_expenses',
+            url: '/ajax/bankPayment/upload_roela_file_bank_expenses',
             type: 'POST',
             data: formData,
             async: false,
