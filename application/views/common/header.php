@@ -8,7 +8,7 @@
         <meta name="description" content="website description" />
         <meta name="keywords" content="website keywords, website keywords" />
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <script src="/assets/js/core/jquery.min.js"></script>
+        <script src="assets/js/core/jquery.min.js"></script>
         <script type="text/javascript" src="/assets/js/home/jquery.js"></script>
         <script type="text/javascript" src="/assets/js/home/jquery-ui.js"></script>
         <script type="text/javascript" src="/assets/js/home/jquery.form.js"></script>
@@ -20,9 +20,9 @@
         <link rel="stylesheet" type="text/css" href="/assets/css//home/tabs.css"/>
         <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css"/>
     <? if(uri_string() != '' ): ?>
-      <?var_dump( url_js("/".uri_string()."/".uri_string().".js") );?>
-        <script type="text/javascript" src="<?= url_js("/".uri_string()."/".uri_string().".js")?>"></script>
-        <link rel="stylesheet" type="text/css" href="<?= url_css("/".uri_string()."/".uri_string().".css") ?>" />
+      
+        <script type="text/javascript" src="<?= "/assets/js/".uri_string()."/".uri_string().".js"?>"></script>
+        <link rel="stylesheet" type="text/css" href="<?= "/assets/css/".uri_string()."/".uri_string().".css" ?>" />
     <? endif; ?>    
         <!-- Added for fancy box -->
       	<!-- Add mousewheel plugin (this is optional) -->
@@ -47,7 +47,7 @@
 <body>
 <div id="main">
 
-    <img id="loading" style="display: none;" src="<?= url_img("/home/cargando.gif")?>">
+    <img id="loading" style="display: none;" src="<?= "/assets/img/home/cargando.gif"?>">
 
     <div id="header">
       <div id="logo">

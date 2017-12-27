@@ -5,7 +5,7 @@ $(document).ready(function() {
     $( ".buttonSubmitOlderExpense" ).click(function(){
         
         var form = "#frm_add_older_expense" + $(this).val();
-        $.post('index.php/ajax/expenses/add_older_expense', $(form).serialize(), function(rta){
+        $.post('/ajax/expenses/add_older_expense', $(form).serialize(), function(rta){
             if (rta.indexOf("success") == -1){
                 $("#div_errors_older_add").html("").append(rta);
             }
