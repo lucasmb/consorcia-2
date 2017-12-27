@@ -53,7 +53,7 @@
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
-	define('ENVIRONMENT', isset($_ENV["CLEARDB_DATABASE_URL"]) ? 'production' : 'development');
+	define('ENVIRONMENT', isset($_ENV["HISTSIZE"]) ? 'production' : 'development');
 
 /*
  *---------------------------------------------------------------

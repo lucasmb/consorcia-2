@@ -77,18 +77,18 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	
-	'dsn'	=> 'mysql:host=localhost; dbname=coedif; charset=utf8;',
+	'dsn'	=> 'mysql:host=localhost; dbname=consorcia; charset=utf8mb4;',
 	'hostname' => 'localhost',
 	'username' => 'root',
 	'password' => 'arzion',
-	'database' => '',
+	'database' => 'consorcia',
 	'dbdriver' => 'pdo',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
 	'cache_on' => FALSE,
 	'cachedir' => '',
-	'char_set' => 'utf8',
+	'char_set' => 'utf8mb4',
 	'dbcollat' => 'utf8_general_ci',
 	'swap_pre' => '',
 	'encrypt' => FALSE,
