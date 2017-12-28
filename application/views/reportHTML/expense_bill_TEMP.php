@@ -2,7 +2,7 @@
 <html>
     <head>
     <title>Factura Expensas</title>
-        <link rel="stylesheet" type="text/css" href="<?= url_css('/reports/expense_bill.css') ?>" />
+        <link rel="stylesheet" type="text/css" href="<?= '/assets/css/reports/expense_bill.css' ?>" />
     </head>
 
 <body>
@@ -16,7 +16,7 @@
     <div class="page">
     <div class="left_column">
         <div class="original_left">
-            <div class="title" style="background: url(assets/img/home/header_report.jpg) no-repeat;">
+            <div class="title" style="background: url(/assets/img/home/header_report.jpg) no-repeat;">
                 <div class="title_center">
                     Recibo de propiedad horizontal ley 13.512 Consorcio de Propietarios CUIT: <?= $property->building->cuit ?><br>
                     Calle: <?= $property->building->street ?> Número <?= $property->building->number ?>
@@ -119,7 +119,7 @@
             </div>
         </div>
         <div class="duplicate_left">
-            <div class="title" style="background: url(assets/img/home/header_report.jpg) no-repeat;">
+            <div class="title" style="background: url(/assets/img/home/header_report.jpg) no-repeat;">
                 <div class="title_center">
                     Recibo de propiedad horizontal ley 13.512 Consorcio de Propietarios CUIT: <?= $property->building->cuit ?><br>
                     Calle: <?= $property->building->street ?> Número <?= $property->building->number ?>
@@ -227,7 +227,7 @@
 ?>
     <div class="right_column">
         <div class="original_right">
-            <div class="title" style="background: url(assets/img/home/header_report.jpg) no-repeat;">
+            <div class="title" style="background: url(/assets/img/home/header_report.jpg) no-repeat;">
                 <div class="title_center">
                     Recibo de propiedad horizontal ley 13.512 Consorcio de Propietarios CUIT: <?= $property->building->cuit ?><br>
                     Calle: <?= $property->building->street ?> Número <?= $property->building->number ?>
@@ -330,7 +330,7 @@
             </div>
         </div>
         <div class="duplicate_right">
-            <div class="title" style="background: url(assets/img/home/header_report.jpg) no-repeat;">
+            <div class="title" style="background: url(/assets/img/home/header_report.jpg) no-repeat;">
                 <div class="title_center">
                     Recibo de propiedad horizontal ley 13.512 Consorcio de Propietarios CUIT: <?= $property->building->cuit ?><br>
                     Calle: <?= $property->building->street ?> Número <?= $property->building->number ?>

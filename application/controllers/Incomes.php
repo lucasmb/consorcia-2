@@ -12,6 +12,8 @@ class Incomes extends MY_Controller {
     {
         $data['buildings'] = Building::find('all');            
         $this->load->view('common/header');
+
+        
         $this->load->view('income/income_home',$data);            
         $this->load->view('common/footer');
     }

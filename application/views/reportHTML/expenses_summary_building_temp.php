@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Informe - Expensas Calle <?= $building->street?> - <?=$building->number?> </title>
-        <link rel="stylesheet" type="text/css" href="<?= url_css('/reports/expenses_summary_building.css') ?>" />
+        <link rel="stylesheet" type="text/css" href="<?= '/assets/css/reports/expenses_summary_building.css' ?>" />
     </head>
 
 <body>

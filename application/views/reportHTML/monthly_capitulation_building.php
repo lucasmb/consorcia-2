@@ -2,7 +2,7 @@
 <html>
     <head>
     <title>Rendición de Cuenta Calle <?= $building->street ?> Número <?= $building->number ?></title>
-    <link rel="stylesheet" type="text/css" href="<?= url_css('/reports/monthly_capitulation_building.css') ?>" />
+    <link rel="stylesheet" type="text/css" href="<?= '/assets/css/reports/monthly_capitulation_building.css' ?>" />
     </head>
 
 <body>

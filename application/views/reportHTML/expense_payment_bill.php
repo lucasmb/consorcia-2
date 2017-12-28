@@ -2,7 +2,7 @@
 <html>
     <head>
     <title>Factura Expensas</title>
-        <link rel="stylesheet" type="text/css" href="<?= url_css('/reports/expense_payment_bill.css') ?>" />
+        <link rel="stylesheet" type="text/css" href="<?= '/assets/css/reports/expense_payment_bill.css') ?>" />
     </head>
 
 <body>

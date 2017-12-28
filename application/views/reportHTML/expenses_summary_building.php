@@ -9,8 +9,8 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <title>Informe - Expensas Calle <?= $building->street?> - <?=$building->number?> </title>
-        <link rel="stylesheet" type="text/css" href="<?= url_css('/reportsHTML/expenses_summary_building.css') ?>" />
-        <script type="text/javascript" src="<?= url_js('/home/jquery.js')?>"></script>
+        <link rel="stylesheet" type="text/css" href="<?= '/assets/css/reportsHTML/expenses_summary_building.css' ?>" />
+        <script type="text/javascript" src="<?= '/assets/js/home/jquery.js'?>"></script>
     </head>
 
 <body onclick="printIt();">

@@ -4,9 +4,9 @@
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <title> Horarios de Visita </title>
     
-        <link rel="stylesheet" type="text/css" href="<?= url_css('/reportsHTML/short_monthly_balance_capitulation.css') ?>" />
-        <script type="text/javascript" src="<?= url_js('/home/jquery.js')?>"></script>
-        <script type="text/javascript" src="<?= url_js('/reportsHTML/font_resizer.js')?>"></script>
+        <link rel="stylesheet" type="text/css" href="<?= '/assets/css/reportsHTML/short_monthly_balance_capitulation.css' ?>" />
+        <script type="text/javascript" src="<?= '/assets/js/home/jquery.js'?>"></script>
+        <script type="text/javascript" src="<?= '/assets/js/reportsHTML/font_resizer.js'?>"></script>
         
     </head>
     <style type="text/css" media="print">

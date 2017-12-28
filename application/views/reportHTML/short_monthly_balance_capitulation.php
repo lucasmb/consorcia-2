@@ -7,9 +7,9 @@
                Hasta <?= $periods[count($periods) - 1]->period_date->format("Y-m") ?>
         </title>
     
-        <link rel="stylesheet" type="text/css" href="<?= url_css('/reportsHTML/short_monthly_balance_capitulation.css') ?>" />
-        <script type="text/javascript" src="<?= url_js('/home/jquery.js')?>"></script>
-        <script type="text/javascript" src="<?= url_js('/reportsHTML/font_resizer.js')?>"></script>
+        <link rel="stylesheet" type="text/css" href="<?= '/assets/css/reportsHTML/short_monthly_balance_capitulation.css' ?>" />
+        <script type="text/javascript" src="<?= '/assets/js/home/jquery.js'?>"></script>
+        <script type="text/javascript" src="<?= '/assets/js/reportsHTML/font_resizer.js'?>"></script>
         
     </head>
     <style type="text/css" media="print">
