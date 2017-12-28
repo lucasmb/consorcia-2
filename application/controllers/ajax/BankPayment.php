@@ -67,10 +67,15 @@ class BankPayment extends CI_Controller {
         $record->codebar = substr($line, 40, 56);
         $record->bank_payment_id = substr($line, 0, 96);
 
+$record_payment_id = escape($record->bank_payment_id);
+var_dump('rec:');
+
+var_dump($record_payment_id);
+
         $record->property = Property::find_by_sql("SELECT p.*
                                                      FROM properties p 
                                                     WHERE p.building_id = $record->building_id
-                                                      AND p.bank_payment_id = $record->property_bank_id")[0];
+                                                      AND p.bank_payment_id = $record_payment_id")[0];
 
         return $record;
 
