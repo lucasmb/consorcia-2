@@ -43,7 +43,7 @@ foreach ($extraordinary_periods as $period):
                 </div>
                 <div class="title_right">
                     <p>Original</p>
-                    <p>Fecha: ... / ... / <?= date('Y'); ?></p>
+                    <p>Fecha: ... / ... /<?= date("Y",strtotime($building->date_next_period())); ?></p>
                 </div>
             </div>
             <table cellpadding="0" cellspacing="0" class="table_owner">
@@ -56,7 +56,7 @@ foreach ($extraordinary_periods as $period):
                         </tr>
                         <tr class="table_row">
                             <td colspan="4">Por cuenta y orden del consorcio de propietarios Calle <?= $property->building->street ?> Número <?= $property->building->number ?> para aplicar los 
-                            conceptos de expensas correspondientes al mes: <?= $property->building->month_name_actual_period(); ?> <?= date('Y'); ?>. 
+                            conceptos de expensas correspondientes al mes: <?= $property->building->month_name_actual_period(); ?> <?= date("Y",strtotime($building->date_next_period())); ?>. 
                             Coeficiente <?= $property->coefficient ?></td>
                         </tr>
                     </tbody>
@@ -128,7 +128,7 @@ foreach ($extraordinary_periods as $period):
                         </tr>
                         <tr class="table_row">
                             <td colspan="4">Por cuenta y orden del consorcio de propietarios Calle <?= $property->building->street ?> Número <?= $property->building->number ?> para aplicar los 
-                            conceptos de expensas correspondientes al mes: <?= $property->building->month_name_actual_period(); ?> <?= date('Y'); ?>. 
+                            conceptos de expensas correspondientes al mes: <?= $property->building->month_name_actual_period(); ?> <?= date("Y",strtotime($building->date_next_period())); ?>. 
                             Coeficiente <?= $property->coefficient ?></td>
                         </tr>
                     </tbody>
@@ -205,7 +205,7 @@ foreach ($extraordinary_periods as $period):
                         </tr>
                         <tr class="table_row">
                             <td colspan="4">Por cuenta y orden del consorcio de propietarios Calle <?= $property->building->street ?> Número <?= $property->building->number ?> para aplicar los 
-                            conceptos de expensas correspondientes al mes: <?= $property->building->month_name_actual_period(); ?> <?= date('Y'); ?>. 
+                            conceptos de expensas correspondientes al mes: <?= $property->building->month_name_actual_period(); ?> <?= date("Y",strtotime($building->date_next_period())); ?>. 
                             Coeficiente <?= $property->coefficient ?></td>
                         </tr>
                     </tbody>

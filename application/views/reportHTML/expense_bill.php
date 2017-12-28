@@ -47,7 +47,7 @@
                         </tr>
                         <tr class="table_row">
                             <td colspan="4">Por cuenta y orden del consorcio de propietarios Calle <?= $property->building->street ?> Número <?= $property->building->number ?> para aplicar los 
-                            conceptos de expensas correspondientes al mes: <?= $property->building->month_name_actual_period(); ?> <?= date('Y'); ?>. 
+                            conceptos de expensas correspondientes al mes: <?= $property->building->month_name_actual_period(); ?> <?= date("Y",strtotime($building->date_next_period())); ?>. 
                             Coeficiente <?= $property->coefficient ?></td>
                         </tr>
                     </tbody>
@@ -158,7 +158,7 @@
                         </tr>
                         <tr class="table_row">
                             <td colspan="4">Por cuenta y orden del consorcio de propietarios Calle <?= $property->building->street ?> Número <?= $property->building->number ?> para aplicar los 
-                            conceptos de expensas correspondientes al mes: <?= $property->building->month_name_actual_period(); ?> <?= date('Y'); ?>. 
+                            conceptos de expensas correspondientes al mes: <?= $property->building->month_name_actual_period(); ?> <?= date("Y",strtotime($building->date_next_period())); ?>. 
                             Coeficiente <?= $property->coefficient ?></td>
                         </tr>
                     </tbody>
@@ -274,7 +274,7 @@
                         </tr>
                         <tr class="table_row">
                             <td colspan="4">Por cuenta y orden del consorcio de propietarios Calle <?= $property->building->street ?> Número <?= $property->building->number ?> para aplicar los 
-                            conceptos de expensas correspondientes al mes: <?= $property->building->month_name_actual_period(); ?> <?= date('Y'); ?>. 
+                            conceptos de expensas correspondientes al mes: <?= $property->building->month_name_actual_period(); ?> <?= date("Y",strtotime($building->date_next_period())); ?>. 
                             Coeficiente <?= $property->coefficient ?></td>
                         </tr>
                     </tbody>
@@ -385,7 +385,7 @@
                         </tr>
                         <tr class="table_row">
                             <td colspan="4">Por cuenta y orden del consorcio de propietarios Calle <?= $property->building->street ?> Número <?= $property->building->number ?> para aplicar los 
-                            conceptos de expensas correspondientes al mes: <?= $property->building->month_name_actual_period(); ?> <?= date('Y'); ?>. 
+                            conceptos de expensas correspondientes al mes: <?= $property->building->month_name_actual_period(); ?> <?= date("Y",strtotime($building->date_next_period())); ?>. 
                             Coeficiente <?= $property->coefficient ?></td>
                         </tr>
                     </tbody>
