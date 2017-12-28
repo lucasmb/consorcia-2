@@ -19,7 +19,8 @@ class IncomeTransaction extends ActiveRecord\Model{
 	}
 
     public static function exist_bank_payment_by_code($payment_code) {
-        $payment = PDO::quote($payment_code);
+        //$payment = PDO::quote($payment_code);
+        $payment = $payment_code;
         $income = IncomeTransaction::find_by_sql("SELECT it.* FROM income_transactions it WHERE SUBSTRING(it.bank_payment_id,41,56) = '$payment'");
         return count($income) > 0;
     }
