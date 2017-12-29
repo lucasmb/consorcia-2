@@ -21,7 +21,10 @@ class BankPayment extends CI_Controller {
 
     		while ( ($line = fgets($fp)) !== false) {
 
+var_dump($line);
                 $line = $this->remove_BOM($line);
+                var_dump('removed:' . trim($line) );
+                //$line = trim($line);
                 if (strlen($line) > 122) {
                     $record = $this->create_record_object_alternative($line);
                 } else {
@@ -55,7 +58,6 @@ class BankPayment extends CI_Controller {
 
 
     private function create_record_object_standard($line) {
-
         $record = new stdClass;
         $record->payment_date = strtodate(substr($line, 0, 8), "Ymd");
         $record->account_payment_date = strtotimestamp(substr($line, 8, 8), "Ymd");
@@ -67,10 +69,9 @@ class BankPayment extends CI_Controller {
         $record->codebar = substr($line, 40, 56);
         $record->bank_payment_id = substr($line, 0, 96);
 
-$record_payment_id = escape($record->bank_payment_id);
-var_dump('rec:');
-
-var_dump($record_payment_id);
+var_dump($record);
+var_dump(mb_substr($line, 0, 96));
+        $record_payment_id = addslashes($record->bank_payment_id);
 
         $record->property = Property::find_by_sql("SELECT p.*
                                                      FROM properties p 
@@ -82,7 +83,7 @@ var_dump($record_payment_id);
     }
     
     private function create_record_object_alternative($line) {
-
+vd('alternative');
         $record = new stdClass;
         $record->building_id = (int)substr($line, 31, 4);
         $record->property_bank_id = (int)substr($line, 35, 4);
@@ -96,6 +97,7 @@ var_dump($record_payment_id);
         $record->payment_method = substr($line, 116, 3);
         $record->bank_payment_id = substr($line, 0, 159);
 
+var_dump($record->bank_payment_id);
         $record->property = Property::find_by_sql("SELECT p.*
                                                      FROM properties p 
                                                     WHERE p.building_id = $record->building_id
