@@ -9,22 +9,19 @@ class BankPayment extends CI_Controller {
     {
         parent::__construct();
     }
-	
-	public function upload_roela_file_bank_payments()
-	{
+    
+    public function upload_roela_file_bank_payments()
+    {
 
-	    if ($_FILES['file_to_upload']['size'] > 0) {
+        if ($_FILES['file_to_upload']['size'] > 0) {
 
-	    	$fp = fopen($_FILES['file_to_upload']['tmp_name'], 'rb');
+            $fp = fopen($_FILES['file_to_upload']['tmp_name'], 'rb');
 
-	    	$building = array();
+            $building = array();
 
-    		while ( ($line = fgets($fp)) !== false) {
+            while ( ($line = fgets($fp)) !== false) {
 
-var_dump($line);
                 $line = $this->remove_BOM($line);
-                var_dump('removed:' . trim($line) );
-                //$line = trim($line);
                 if (strlen($line) > 122) {
                     $record = $this->create_record_object_alternative($line);
                 } else {
@@ -33,21 +30,21 @@ var_dump($line);
                 
                 $building[$record->building_id][$record->operation_type_id][] = $record;
 
-    		}
+            }
 
-    		$data['building'] = $building;
-    		$body = $this->load->view('/ajax/bankPayment/roela_bank_payments_from_file', $data, true);
+            $data['building'] = $building;
+            $body = $this->load->view('/ajax/bankPayment/roela_bank_payments_from_file', $data, true);
             
             if(strlen($body) == 0)
                 echo "nok";
             else
                 echo $body;
 
-	    } else {
-	    	echo "No se ha seleccionado un archivo o bien el archivo seleccionado no es valido";
-	    }
+        } else {
+            echo "No se ha seleccionado un archivo o bien el archivo seleccionado no es valido";
+        }
 
-	}
+    }
 
     private function remove_BOM($str="") {
         if(substr($str, 0,3) == pack("CCC",0xef,0xbb,0xbf)) {
@@ -58,6 +55,7 @@ var_dump($line);
 
 
     private function create_record_object_standard($line) {
+
         $record = new stdClass;
         $record->payment_date = strtodate(substr($line, 0, 8), "Ymd");
         $record->account_payment_date = strtotimestamp(substr($line, 8, 8), "Ymd");
@@ -69,21 +67,17 @@ var_dump($line);
         $record->codebar = substr($line, 40, 56);
         $record->bank_payment_id = substr($line, 0, 96);
 
-var_dump($record);
-var_dump(mb_substr($line, 0, 96));
-        $record_payment_id = addslashes($record->bank_payment_id);
-
         $record->property = Property::find_by_sql("SELECT p.*
                                                      FROM properties p 
                                                     WHERE p.building_id = $record->building_id
-                                                      AND p.bank_payment_id = $record_payment_id")[0];
+                                                      AND p.bank_payment_id = $record->property_bank_id")[0];
 
         return $record;
 
     }
     
     private function create_record_object_alternative($line) {
-vd('alternative');
+
         $record = new stdClass;
         $record->building_id = (int)substr($line, 31, 4);
         $record->property_bank_id = (int)substr($line, 35, 4);
@@ -97,7 +91,6 @@ vd('alternative');
         $record->payment_method = substr($line, 116, 3);
         $record->bank_payment_id = substr($line, 0, 159);
 
-var_dump($record->bank_payment_id);
         $record->property = Property::find_by_sql("SELECT p.*
                                                      FROM properties p 
                                                     WHERE p.building_id = $record->building_id

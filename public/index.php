@@ -53,7 +53,13 @@
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
-	define('ENVIRONMENT', isset($_ENV["HISTSIZE"]) ? 'production' : 'development');
+	//define('ENVIRONMENT', isset($_ENV["HISTSIZE"]) ? 'production' : 'development');
+
+//define('ENVIRONMENT',  'production');
+if($_SERVER['REMOTE_ADDR'] !== '127.0.0.1')
+    define('ENVIRONMENT',  'production');
+else
+    define('ENVIRONMENT',  'development');
 
 /*
  *---------------------------------------------------------------
@@ -68,7 +74,8 @@ switch (ENVIRONMENT)
 	case 'development':
 		error_reporting(-1);
 		ini_set('display_errors', 1);
-	break;
+        error_reporting(E_ALL & ~E_WARNING & ~E_NOTICE);
+        break;
 
 	case 'testing':
 	case 'production':

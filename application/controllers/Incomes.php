@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Incomes extends MY_Controller {
+class Incomes extends Backend {
 
 
     function __construct()

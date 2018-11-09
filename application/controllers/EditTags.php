@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class EditTags extends MY_Controller {
+class EditTags extends Backend {
 
     
     function __construct()

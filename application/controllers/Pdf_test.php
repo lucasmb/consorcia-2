@@ -18,4 +18,4 @@ class Pdf_test extends CI_Controller{
     }  
 
 }
-?>
+

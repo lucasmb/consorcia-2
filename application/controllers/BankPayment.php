@@ -1,7 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 include_once APPPATH.'libraries/RoelaBank.php';
 
-class BankPayment extends MY_Controller {
+class BankPayment extends Backend {
 
     function __construct()
     {
