@@ -20,8 +20,7 @@ class Activerecord {
                         '://'   . $db[$name]['username'] .
                         ':'     . $db[$name]['password'] .
                         '@'     . $db[$name]['hostname'] .
-                        '/'     . $db[$name]['database'] .
-                        '?'     . $db[$name]['char_set'];
+                        '/'     . $db[$name]['database'];
             }
         } 
         

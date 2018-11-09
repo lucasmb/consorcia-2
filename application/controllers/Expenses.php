@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Expenses extends MY_Controller {
+class Expenses extends Backend {
 
 
     function __construct()

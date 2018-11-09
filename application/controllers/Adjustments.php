@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Adjustments extends MY_Controller {
+class Adjustments extends Backend {
 
     
     function __construct()

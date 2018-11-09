@@ -12,7 +12,7 @@ class Incomes extends CI_Controller {
             $id = $this->input->post("id",true);
             $building = Building::find($id);     
             $data['building'] = $building;       
-            $body = $this->load->view('/ajax/income/income_operations',$data);
+            $body = $this->load->view('/ajax/income/income_operations',$data, true);
             echo $body;            
         }
         
@@ -22,7 +22,7 @@ class Incomes extends CI_Controller {
             $data['building'] = $building;
             $data['extra_period'] = $building->get_extraordinary_period_for_pay();
             $data['unpaid_properties'] = $building->unpaid_current_properties();      
-            $body = $this->load->view('/ajax/income/income_summary',$data);
+            $body = $this->load->view('/ajax/income/income_summary',$data, true);
             echo $body;            
         }
         
@@ -35,7 +35,7 @@ class Incomes extends CI_Controller {
             $data['building'] = $building;
             $data['unpaid_properties'] = $building->unpaid_current_properties();      
             $data['paid_properties'] = $building->paid_current_properties();
-            $body = $this->load->view('/ajax/income/income_payment',$data);
+            $body = $this->load->view('/ajax/income/income_payment',$data, true);
             echo $body;            
         }
         
@@ -48,7 +48,7 @@ class Incomes extends CI_Controller {
             $data['extraordinary_properties'] = $building->properties;
             $data['extra_period'] = $building->get_extraordinary_period_for_pay();
             $data['periods_for_pay'] = $building->get_actives_or_with_activity_extraordinaries_period();            
-            $body = $this->load->view('/ajax/income/income_extra',$data);
+            $body = $this->load->view('/ajax/income/income_extra',$data, true);
             echo $body;            
         }
                 
@@ -86,7 +86,7 @@ class Incomes extends CI_Controller {
             $data['extra_period'] = $building->get_extraordinary_period_for_pay();
             $data['periods_for_pay'] = $building->get_extraordinary_period_for_pay();    
             $data['building'] = $building;
-            $body = $this->load->view('/ajax/income/income_ordinary_and_extraordinary',$data);
+            $body = $this->load->view('/ajax/income/income_ordinary_and_extraordinary',$data, true);
             echo $body;            
         }
                 
@@ -239,7 +239,7 @@ class Incomes extends CI_Controller {
         
         $id = $this->input->post("id",true);
         $data['income'] = AditionalIncome::find($id);      
-        $body = $this->load->view('/ajax/income/edit_income_aditional',$data);
+        $body = $this->load->view('/ajax/income/edit_income_aditional',$data, true);
         echo $body;
 
     }
