@@ -99,8 +99,8 @@
                 <tbody>
                 <? 
                     $i = 0;
-                    foreach ($extraordinary_periods as $period):                        
-                        
+                    foreach ($extraordinary_periods as $period):
+                       // var_dump($extraordinary_periods);
                         $extra_expenses = $building->get_extra_expenses_last_month($period);
                         $total_extraordinary_fees = $total_extraordinary_fees + $building->total_expense_extra_last_month_for($period);
                         if (count($extra_expenses) > 0):
