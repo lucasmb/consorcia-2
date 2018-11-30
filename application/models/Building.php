@@ -875,7 +875,9 @@ class Building extends ActiveRecord\Model{
 
     public function total_gain_extra_last_month_for($period){
         $total = 0;
-        $one_month_back = (empty($period)) ? $this->one_month_back() : $period;
+       // $one_month_back = (empty($period)) ? $this->one_month_back() : $period;
+        $one_month_back = $this->one_month_back();
+
         foreach ($this->properties as $property):
             foreach ($property->extraordinary_transaction as $et):
                 if ($et->period_date->format("Y-m-d") == $one_month_back && $et->type_pay != 'unpaid')
@@ -896,9 +898,10 @@ class Building extends ActiveRecord\Model{
 
     }
 
-    public function total_expense_extra_last_month_for($period){
+    public function total_expense_extra_last_month_for($period=null){
 
-        $one_month_back = (empty($period)) ? $this->one_month_back() : $period;
+        $one_month_back = $this->one_month_back();
+        //$one_month_back = (empty($period)) ? $this->one_month_back() : $period->period_date->format("Y-m-d");
         $result = self::find_by_sql("SELECT SUM(ee.value) as total
                                        FROM extraordinary_expenses ee
                                       WHERE ee.extraordinary_period_id = ". $period->id ."
@@ -912,12 +915,14 @@ class Building extends ActiveRecord\Model{
 
     public function get_extra_expenses_last_month($period){
 
-        $one_month_back = (empty($period)) ? $this->one_month_back() : $period;
+        $one_month_back = $this->one_month_back();
+        //$one_month_back = (empty($period)) ? $this->one_month_back() : $period->period_date->format("Y-m-d");
+        //var_dump($one_month_back);
         $result = ExtraordinaryExpense::find_by_sql("SELECT *
                                        FROM extraordinary_expenses ee
-                                      WHERE ee.extraordinary_period_id = ". $period->id ."
-                                        AND ee.building_id = '". $this->id ."'
-                                        AND ee.period_date = '$one_month_back'");
+                                      WHERE ee.extraordinary_period_id = {$period->id}
+                                        AND ee.building_id = {$this->id}
+                                        AND ee.period_date= '{$one_month_back}' ");
 
         if ($result)
             return $result;
