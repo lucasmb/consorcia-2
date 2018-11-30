@@ -7,4 +7,3 @@ class IncomeBalanceTag extends ActiveRecord\Model{
     );
     
 }
-?>

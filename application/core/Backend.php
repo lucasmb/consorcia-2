@@ -15,8 +15,8 @@ class Backend extends MY_Controller {
 
 		$this->lang->load('auth');
 
-        echo 'Backend';
-        	//vd($_SERVER);
+        //echo 'Backend';
+        //vd($_SERVER);
 
 		if (!$this->ion_auth->logged_in())
 		{

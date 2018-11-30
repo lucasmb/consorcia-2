@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Reports extends Backend {
+class Reports extends MY_Controller {
 
     
     function __construct()
@@ -15,7 +15,7 @@ class Reports extends Backend {
         $this->load->view('report/report_home',$data);            
         $this->load->view('common/footer');
 
-        var_dump($_SERVER);
+        //var_dump($_SERVER);
     }
      
     public function report_expenses_bill()
@@ -554,7 +554,7 @@ class Reports extends Backend {
 
 
 
-                
+
             }
         }
 
