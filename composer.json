@@ -16,6 +16,7 @@
 	"require": {
 		"monolog/monolog": "^1.23",
 		"php-activerecord/php-activerecord": "^1.2"
+
 	},
 	"suggest": {
 		"paragonie/random_compat": "Provides better randomness in PHP 5.x"

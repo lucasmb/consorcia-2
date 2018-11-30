@@ -85,7 +85,7 @@ $db['default'] = array(
 	'dsn'	=> 'mysql:host=localhost;dbname=consorcia;charset=utf8mb4;',
 	'hostname' => 'localhost',
 	'username' => 'root',
-	'password' => 'arzion',
+	'password' => 'r00tp455',
 	'database' => 'consorcia',
 	'dbdriver' => 'pdo',
 	'dbprefix' => '',

@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Reports extends MY_Controller {
+class Reports extends Backend {
 
     
     function __construct()
@@ -14,6 +14,8 @@ class Reports extends MY_Controller {
         $this->load->view('common/header');
         $this->load->view('report/report_home',$data);            
         $this->load->view('common/footer');
+
+        //var_dump($_SERVER);
     }
      
     public function report_expenses_bill()
@@ -194,7 +196,34 @@ class Reports extends MY_Controller {
             $dompdf->stream("Rendición de cuenta - Calle ".$building->street." - ".$building->number.".pdf");*/
         }
     }
-        
+
+    public function monthly_capitulation_only_ordinary_by_date($building_id=null, $period=null){
+
+        ini_set('memory_limit', '-1');
+        $id_building = $building_id;
+
+        if(empty($period)) $period= null;
+        if ($id_building != ""){
+
+            $building = Building::find($id_building);
+            $data['building'] = $building;
+            $data['period'] = $period;
+            $data['special_expenses'] = $building->get_two_month_back_special_expenses();
+            $data['aditional_incomes'] = $building->get_last_month_aditional_incomes($period);
+
+            if ($building->type_capitulation_report == 1){
+                $data['expenses'] = $building->get_last_month_expenses();
+                $this->load->view('reportHTML/monthly_capitulation_only_ordinary',$data);
+            }
+            elseif ($building->type_capitulation_report == 2) {
+                $data['laboral_expenses'] = $building->get_last_laboral_month_expenses($period);
+                $data['non_laboral_expenses'] = $building->get_last_non_laboral_month_expenses($period);
+                $data['estimative_expenses'] = $building->get_last_estimative_expenses($period);
+                $this->load->view('reportHTML/monthly_capitulation_only_ordinary_short_description',$data);
+            }
+        }
+    }
+
     public function monthly_capitulation_only_extraordinary(){
         ini_set('memory_limit', '-1'); 
         $id_building = $this->input->post("building_capitulation_extraordinary",true);
@@ -502,14 +531,16 @@ class Reports extends MY_Controller {
             if ($building->type_capitulation_report == 1){
                 $data['expenses'] = $building->get_last_month_expenses();
                 $view = $this->load->view('reportHTML/monthly_capitulation_only_ordinary',$data,true);
-                
+
+
+                /*
                 
                 $config = Array(
                     'protocol' => 'smtp',
                     'smtp_host' => 'ssl://smtp.googlemail.com',
                     'smtp_port' => 465,
-                    'smtp_user' => 'andyrizzo@gmail.com', // change it to yours
-                    'smtp_pass' => 'tenvsnocode123', // change it to yours
+                    'smtp_user' => 'highsagan@gmail.com', // change it to yours
+                    'smtp_pass' => 'Saganp455', // change it to yours
                     'mailtype' => 'html',
                     'charset' => 'iso-8859-1',
                     'wordwrap' => TRUE
@@ -519,8 +550,8 @@ class Reports extends MY_Controller {
 
                 $this->email->set_newline("\r\n");
 
-                $this->email->from('andyrizzo@gmail.com');
-                $this->email->to('andyrizzo@gmail.com'); 
+                $this->email->from('highsagan@gmail.com');
+                $this->email->to('lucasborio@gmail.com');
                 
                 $this->email->subject('Resumen expensas');
                 $this->email->message("prueba para ver si llegan los mails");   
@@ -530,6 +561,25 @@ class Reports extends MY_Controller {
                 } else {
                     show_error($this->email->print_debugger());
                 }
+
+                */
+
+                $this->load->library('email');
+
+                $this->email->from('highsagan@gmail.com', 'Your Name');
+                $this->email->to('lucasborio@gmail.com');
+
+
+                $this->email->subject('Email Test');
+                $this->email->message('Testing the email class.');
+
+                if($this->email->send()){
+                    echo 'Email sent.';
+                } else {
+                    show_error($this->email->print_debugger());
+                }
+
+
 
                 
             }
