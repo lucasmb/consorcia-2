@@ -75,14 +75,9 @@ $query_builder = TRUE;
 
 	//mysql://b0a604949482fb:27a0030a@us-cdbr-iron-east-05.cleardb.net/heroku_9a78821e28669e0?reconnect=true
 
-//adminZM1rvtI
-//5DwiWu8dshPZ
-//$db['default']['database'] = 'consorcia';
-//$db['default']['dbdriver'] = 'mysql';
-
 $db['default'] = array(
 	
-	'dsn'	=> 'mysql:host=localhost;dbname=consorcia;charset=utf8mb4;',
+	'dsn'	=> 'mysql:host=localhost; dbname=consorcia; charset=utf8mb4;',
 	'hostname' => 'localhost',
 	'username' => 'root',
 	'password' => 'r00tp455',
@@ -94,7 +89,7 @@ $db['default'] = array(
 	'cache_on' => FALSE,
 	'cachedir' => '',
 	'char_set' => 'utf8mb4',
-	'dbcollat' => 'utf8mb4_unicode_ci',
+	'dbcollat' => 'utf8_general_ci',
 	'swap_pre' => '',
 	'encrypt' => FALSE,
 	'compress' => FALSE,

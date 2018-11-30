@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = '';
+$config['base_url'] = "http://". $_SERVER['HTTP_HOST'];
 
 /*
 |--------------------------------------------------------------------------
@@ -532,18 +532,15 @@ $config['proxy_ips'] = '';
   | for base controllers and some third-party libraries.
   |
  */
-
 function customCIAutoload($class)
 {
     $path = array('core','libraries', 'models');
-
     if(strpos($class, 'CI_') !== 0) {
         foreach($path as $dir) {
             if (file_exists(APPPATH.$dir.'/'.$class.'.php'))
                 include_once(APPPATH.$dir.'/'. $class .'.php');
         }
     }
-
     /*if(strpos($class, 'CI_') !== 0)
     {
         @include_once( APPPATH . 'core/'. $class . EXT );

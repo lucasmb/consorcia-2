@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Reports extends Backend {
+class Reports extends MY_Controller {
 
     
     function __construct()
@@ -196,34 +196,7 @@ class Reports extends Backend {
             $dompdf->stream("Rendición de cuenta - Calle ".$building->street." - ".$building->number.".pdf");*/
         }
     }
-
-    public function monthly_capitulation_only_ordinary_by_date($building_id=null, $period=null){
-
-        ini_set('memory_limit', '-1');
-        $id_building = $building_id;
-
-        if(empty($period)) $period= null;
-        if ($id_building != ""){
-
-            $building = Building::find($id_building);
-            $data['building'] = $building;
-            $data['period'] = $period;
-            $data['special_expenses'] = $building->get_two_month_back_special_expenses();
-            $data['aditional_incomes'] = $building->get_last_month_aditional_incomes($period);
-
-            if ($building->type_capitulation_report == 1){
-                $data['expenses'] = $building->get_last_month_expenses();
-                $this->load->view('reportHTML/monthly_capitulation_only_ordinary',$data);
-            }
-            elseif ($building->type_capitulation_report == 2) {
-                $data['laboral_expenses'] = $building->get_last_laboral_month_expenses($period);
-                $data['non_laboral_expenses'] = $building->get_last_non_laboral_month_expenses($period);
-                $data['estimative_expenses'] = $building->get_last_estimative_expenses($period);
-                $this->load->view('reportHTML/monthly_capitulation_only_ordinary_short_description',$data);
-            }
-        }
-    }
-
+        
     public function monthly_capitulation_only_extraordinary(){
         ini_set('memory_limit', '-1'); 
         $id_building = $this->input->post("building_capitulation_extraordinary",true);
@@ -581,7 +554,7 @@ class Reports extends Backend {
 
 
 
-                
+
             }
         }
 

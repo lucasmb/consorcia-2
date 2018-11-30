@@ -23,10 +23,6 @@ $(document).ready(function() {
         foreach ($building as $building_id => $operation_type_array) {
             $building_model = Building::find($building_id);
             foreach ($operation_type_array as $operation_type_id => $record_bank_payment) {
-
-               var_dump('operation_id');
-               var_dump($operation_type_id);
-
 ?>
             <form id="frm_bank_payment_<?= $building_id ?>" class="frm_bank_payment">
                 <input name="building_id" id="building_id" type="hidden" value="<?= $building_id; ?>">
@@ -78,8 +74,6 @@ $(document).ready(function() {
                                 <td><?= $record->payment_method ?></td>
                             <? endif; ?>
                             <td><?= $record->payment_ammount ?></td>
-
-                            <? vd($record); ?>
                             <td><?= $record->property->payment_type_for_ammount($record->payment_ammount, $operation_type_id); ?></td>
                             <? if (is_extraordinary_operation($operation_type_id)): ?>
                                 <td>

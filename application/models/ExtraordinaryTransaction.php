@@ -8,7 +8,7 @@ class ExtraordinaryTransaction extends ActiveRecord\Model{
     );
     
     public static function exist_bank_payment($bank_payment_id) {
-        $payment = mysql_real_escape_string($bank_payment_id);
+        $payment = addslashes($bank_payment_id);
 		$income = ExtraordinaryTransaction::find_by_sql("SELECT et.*
                                                    		   FROM extraordinary_transactions et 
                                                   		  WHERE et.bank_payment_id = '$payment'");

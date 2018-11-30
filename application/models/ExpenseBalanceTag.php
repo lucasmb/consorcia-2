@@ -7,7 +7,7 @@ class ExpenseBalanceTag extends ActiveRecord\Model{
     );
     
     static $has_many = array(
-        array('expenses_tags',  'readonly' => false)
+        array('expense_tags',  'readonly' => false)
     );
     
 }
