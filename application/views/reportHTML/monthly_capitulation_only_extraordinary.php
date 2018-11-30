@@ -24,7 +24,7 @@
             <div class="title_center">
                 Consorcio de Propietarios Calle: <?= $building->street ?> Número <?= $building->number ?><br>
                 CUIT: <?= $building->cuit ?> REG. SEG. SOCIAL - IVA SUJETO NO ALCANZADO<br>
-                Informe mensual correspondiente al mes de : <?= $building->month_name_last_month(); ?> / <?= date('Y'); ?><br>
+                Informe mensual correspondiente al mes de : <?= $building->month_name_last_month($period); ?> / <?= date('Y'); ?><br>
                 
             </div>
             
