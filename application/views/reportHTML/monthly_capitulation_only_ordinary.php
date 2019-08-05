@@ -31,7 +31,7 @@
 
         <div class="title_left">
             Administracion de Consorcios Jose Hernandez<br>
-            Telefono: 0221-422-9410<br>
+            Telefono: 0221-484-6188<br>
             Celular:  0221-15-485-1448
         </div>
 
