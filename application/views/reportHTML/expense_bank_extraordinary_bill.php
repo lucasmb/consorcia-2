@@ -33,7 +33,6 @@
             <div class="header">
 
                 <div class="header_left">
-                    Recibo de propiedad horizontal ley 13.512 <br>
                     Consorcio de Propietarios <br>
                     Calle: <?= $property->building->street ?> Número <?= $property->building->number ?>
                     <? if($property->building->cuit): ?> 

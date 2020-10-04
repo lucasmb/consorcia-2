@@ -11,7 +11,7 @@
         <div class="original_left">
             <div class="title" style="background: url(assets/img/home/header_report.jpg) no-repeat;">
                 <div class="title_center">
-                    Recibo de propiedad horizontal ley 13.512 Consorcio de Propietarios CUIT: <br>
+                    Consorcio de Propietarios CUIT: <br>
                     Calle: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Número:
                 </div>
                 <div class="title_right">
@@ -92,7 +92,7 @@
         <div class="duplicate_left">
             <div class="title" style="background: url(assets/img/home/header_report.jpg) no-repeat;">
                 <div class="title_center">
-                    Recibo de propiedad horizontal ley 13.512 Consorcio de Propietarios CUIT: <br>
+                    Consorcio de Propietarios CUIT: <br>
                     Calle: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Número:
                 </div>
                 <div class="title_right">
@@ -175,7 +175,7 @@
         <div class="original_right">
             <div class="title" style="background: url(assets/img/home/header_report.jpg) no-repeat;">
                 <div class="title_center">
-                    Recibo de propiedad horizontal ley 13.512 Consorcio de Propietarios CUIT: <br>
+                    Consorcio de Propietarios CUIT: <br>
                     Calle: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Número:
                 </div>
                 <div class="title_right">
@@ -256,7 +256,7 @@
         <div class="duplicate_right">
             <div class="title" style="background: url(assets/img/home/header_report.jpg) no-repeat;">
                 <div class="title_center">
-                    Recibo de propiedad horizontal ley 13.512 Consorcio de Propietarios CUIT: <br>
+                    Consorcio de Propietarios CUIT: <br>
                     Calle: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Número:
                 </div>
                 <div class="title_right">
