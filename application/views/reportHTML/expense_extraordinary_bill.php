@@ -38,7 +38,7 @@ foreach ($extraordinary_periods as $period):
         <div class="original_left">
             <div class="title" style="background: url(../assets/img/home/header_report.jpg) no-repeat;">
                 <div class="title_center">
-                    Recibo de propiedad horizontal ley 13.512 Consorcio de Propietarios CUIT: <?= $property->building->cuit ?><br>
+                    Consorcio de Propietarios CUIT: <?= $property->building->cuit ?><br>
                     Calle: <?= $property->building->street ?> Número <?= $property->building->number ?>
                 </div>
                 <div class="title_right">
@@ -110,7 +110,7 @@ foreach ($extraordinary_periods as $period):
         <div class="duplicate_left">
             <div class="title" style="background: url(../assets/img/home/header_report.jpg) no-repeat;">
                 <div class="title_center">
-                    Recibo de propiedad horizontal ley 13.512 Consorcio de Propietarios CUIT: <?= $property->building->cuit ?><br>
+                    Consorcio de Propietarios CUIT: <?= $property->building->cuit ?><br>
                     Calle: <?= $property->building->street ?> Número <?= $property->building->number ?>
                 </div>
                 <div class="title_right">
@@ -187,7 +187,7 @@ foreach ($extraordinary_periods as $period):
         <div class="original_right">
             <div class="title" style="background: url(../assets/img/home/header_report.jpg) no-repeat;">
                 <div class="title_center">
-                    Recibo de propiedad horizontal ley 13.512 Consorcio de Propietarios CUIT: <?= $property->building->cuit ?><br>
+                    Consorcio de Propietarios CUIT: <?= $property->building->cuit ?><br>
                     Calle: <?= $property->building->street ?> Número <?= $property->building->number ?>
                 </div>
                 <div class="title_right">
@@ -259,7 +259,7 @@ foreach ($extraordinary_periods as $period):
         <div class="duplicate_right">
             <div class="title" style="background: url(../assets/img/home/header_report.jpg) no-repeat;">
                 <div class="title_center">
-                    Recibo de propiedad horizontal ley 13.512 Consorcio de Propietarios CUIT: <?= $property->building->cuit ?><br>
+                    Consorcio de Propietarios CUIT: <?= $property->building->cuit ?><br>
                     Calle: <?= $property->building->street ?> Número <?= $property->building->number ?>
                 </div>
                 <div class="title_right">

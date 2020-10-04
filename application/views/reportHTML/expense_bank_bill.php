@@ -32,7 +32,6 @@
             <div class="header">
 
                 <div class="header_left">
-                    Recibo de propiedad horizontal ley 13.512 <br>
                     Consorcio de Propietarios <? if($property->building->cuit): ?> CUIT: <?= $property->building->cuit ?> <? endif; ?><br>
                     Calle: <?= $property->building->street ?> Número <?= $property->building->number ?>
                 </div>
@@ -159,7 +158,6 @@
             <div class="header">
 
                 <div class="header_left">
-                    Recibo de propiedad horizontal ley 13.512 <br>
                     Consorcio de Propietarios <? if($property->building->cuit): ?> CUIT: <?= $property->building->cuit ?> <? endif; ?><br>
                     Calle: <?= $property->building->street ?> Número <?= $property->building->number ?>
                 </div>
